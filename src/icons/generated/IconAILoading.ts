@@ -1,0 +1,3 @@
+import { convertIcon } from '../Icon';
+const svg = { viewBox: "0 0 16 16", fill: "none", inner: "<path d=\"M15.1112 7.99978C15.1112 4.07242 11.9275 0.888672 8.00009 0.888672C5.18219 0.888672 2.74711 2.52771 1.59619 4.90445\" stroke=\"url(#__id__)\" stroke-width=\"1.77778\" stroke-linecap=\"round\" /><defs><linearGradient id=\"__id__\" x1=\"16\" y1=\"8\" x2=\"2.68594\" y2=\"11.022\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"__fill1__\"/><stop offset=\"0.3\" stop-color=\"__fill2__\"/><stop offset=\"0.6\" stop-color=\"__fill3__\"/><stop offset=\"1\" stop-color=\"__fill4__\" stop-opacity=\"0\"/></linearGradient></defs>" };
+export default convertIcon(svg, "ai_loading", "IconAILoading");

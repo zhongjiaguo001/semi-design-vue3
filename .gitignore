@@ -1,0 +1,10 @@
+node_modules
+dist
+mcp/data
+.playwright-mcp
+*.png
+*.tgz
+.npmrc
+.DS_Store
+Thumbs.db
+*.log

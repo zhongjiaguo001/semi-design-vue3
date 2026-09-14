@@ -1,0 +1,5 @@
+[mcp_servers.semi-design-vue]
+command = "node"
+args = ["semi-mcp.js"]
+enabled = true
+startup_timeout_sec = 15

@@ -1,0 +1,112 @@
+{
+  "name": "semi-design-vue3",
+  "version": "2.103.0",
+  "description": "Semi Design Vue 3 adapter (Foundation 2.103.0) with MCP server for AI tools",
+  "type": "module",
+  "license": "MIT",
+  "author": "semi-design-vue3",
+  "keywords": [
+    "vue",
+    "vue3",
+    "semi-design",
+    "ui",
+    "components",
+    "mcp",
+    "design-system"
+  ],
+  "homepage": "https://github.com/zhongjiaguo001/semi-design-vue3",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhongjiaguo001/semi-design-vue3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhongjiaguo001/semi-design-vue3/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/style.css",
+  "unpkg": "./dist/index.js",
+  "jsdelivr": "./dist/index.js",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss",
+    "./src/styles/index.scss",
+    "./src/icons/index.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style.css": "./dist/style.css",
+    "./dist/style.css": "./dist/style.css",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "semi-design-vue3": "semi-mcp.js",
+    "semi-design-vue-mcp": "semi-mcp.js"
+  },
+  "files": [
+    "dist",
+    "mcp",
+    "src",
+    "skills",
+    "semi-mcp.js",
+    "LICENSE",
+    "README.md",
+    "!src/**/*.test.ts",
+    "!**/*.png"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "vite --config vite.playground.config.ts",
+    "build": "vite build && node scripts/emit-dts.mjs && node scripts/build-mcp-data.mjs",
+    "build:mcp": "node scripts/build-mcp-data.mjs",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:mcp": "node scripts/test-mcp.mjs",
+    "gen:icons": "node scripts/gen-icons.mjs",
+    "docs:sync": "node scripts/sync-official-docs.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "@douyinfe/semi-foundation": "2.103.0",
+    "@douyinfe/semi-json-viewer-core": "2.103.0",
+    "@douyinfe/semi-theme-default": "2.103.0",
+    "@tiptap/core": "^3.31.3",
+    "@tiptap/extension-document": "^3.31.3",
+    "@tiptap/extension-hard-break": "^3.31.3",
+    "@tiptap/extension-paragraph": "^3.31.3",
+    "@tiptap/extension-text": "^3.31.3",
+    "@tiptap/extensions": "^3.31.3",
+    "@tiptap/pm": "^3.31.3",
+    "@tiptap/vue-3": "^3.31.3",
+    "classnames": "^2.5.1",
+    "date-fns": "^2.30.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@douyinfe/semi-icons": "2.103.0",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^22.5.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^25.0.0",
+    "sass": "^1.79.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.1",
+    "vue": "^3.5.10",
+    "vue-tsc": "^2.1.6"
+  }
+}

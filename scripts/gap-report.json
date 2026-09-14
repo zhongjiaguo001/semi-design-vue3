@@ -1,0 +1,643 @@
+{
+ "divider": {
+  "md": "divider.md",
+  "live": 2,
+  "demos": 3,
+  "missing": []
+ },
+ "grid": {
+  "md": "grid.md",
+  "live": 7,
+  "demos": 8,
+  "missing": []
+ },
+ "icon": {
+  "md": "icon.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "layout": {
+  "md": "layout.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "space": {
+  "md": "space.md",
+  "live": 5,
+  "demos": 6,
+  "missing": []
+ },
+ "typography": {
+  "md": "typography.md",
+  "live": 10,
+  "demos": 11,
+  "missing": []
+ },
+ "floatButton": {
+  "md": "floatbutton.md",
+  "live": 7,
+  "demos": 8,
+  "missing": []
+ },
+ "aiIcon": {
+  "md": "icon.md",
+  "live": 8,
+  "demos": 2,
+  "missing": [
+   "基础使用",
+   "旋转",
+   "尺寸",
+   "颜色",
+   "双色图标",
+   "多色按钮",
+   "自定义图标",
+   "ARIA"
+  ]
+ },
+ "aiButton": {
+  "md": "button.md",
+  "live": 17,
+  "demos": 2,
+  "missing": [
+   "按钮类型",
+   "关于类型字体色值",
+   "浅色背景",
+   "深色背景",
+   "无背景",
+   "边框模式",
+   "尺寸",
+   "块级按钮",
+   "图标按钮",
+   "链接按钮",
+   "禁用状态",
+   "加载状态",
+   "组合尺寸",
+   "组合禁用",
+   "组合类型",
+   "基础使用"
+  ]
+ },
+ "aiTag": {
+  "md": "tag.md",
+  "live": 12,
+  "demos": 2,
+  "missing": [
+   "基本用法",
+   "尺寸",
+   "形状",
+   "配置图标",
+   "颜色",
+   "样式类型",
+   "头像标签",
+   "不可见的",
+   "TagGroup 使用",
+   "TagGroup 使用",
+   "SplitTagGroup 组合标签"
+  ]
+ },
+ "aiFloatButton": {
+  "md": "floatbutton.md",
+  "live": 7,
+  "demos": 2,
+  "missing": [
+   "基本用法",
+   "尺寸",
+   "形状",
+   "点击跳转",
+   "带徽章的",
+   "悬浮按钮组"
+  ]
+ },
+ "aiChatInput": {
+  "md": "aiChatInput.md",
+  "live": 13,
+  "demos": 3,
+  "missing": [
+   "消息发送",
+   "富文本输入区",
+   "配置区域",
+   "配置区域",
+   "操作区域",
+   "自定义上传按钮",
+   "底部按钮形状",
+   "建议",
+   "技能及模版",
+   "自定义渲染顶部区域",
+   "自定义扩展"
+  ]
+ },
+ "aiChatDialogue": {
+  "md": "aiChatDialogue.md",
+  "live": 5,
+  "demos": 14,
+  "missing": []
+ },
+ "codeHighlight": {
+  "md": "codehighlight.md",
+  "live": 3,
+  "demos": 5,
+  "missing": []
+ },
+ "markdownRender": {
+  "md": "markdownrender.md",
+  "live": 4,
+  "demos": 5,
+  "missing": []
+ },
+ "lottie": {
+  "md": "lottie.md",
+  "live": 4,
+  "demos": 5,
+  "missing": []
+ },
+ "chat": {
+  "md": "chat.md",
+  "live": 10,
+  "demos": 12,
+  "missing": []
+ },
+ "hotKeys": {
+  "md": "hotkeys.md",
+  "live": 5,
+  "demos": 6,
+  "missing": []
+ },
+ "dragMove": {
+  "md": "dragMove.md",
+  "live": 4,
+  "demos": 5,
+  "missing": []
+ },
+ "jsonViewer": {
+  "md": "jsonviewer.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "audioPlayer": {
+  "md": "audioPlayer.md",
+  "live": 3,
+  "demos": 4,
+  "missing": []
+ },
+ "videoPlayer": {
+  "md": "videoPlayer.md",
+  "live": 10,
+  "demos": 11,
+  "missing": []
+ },
+ "autoComplete": {
+  "md": "autocomplete.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "cascader": {
+  "md": "cascader.md",
+  "live": 27,
+  "demos": 28,
+  "missing": []
+ },
+ "button": {
+  "md": "button.md",
+  "live": 17,
+  "demos": 18,
+  "missing": []
+ },
+ "checkbox": {
+  "md": "checkbox.md",
+  "live": 12,
+  "demos": 13,
+  "missing": []
+ },
+ "datePicker": {
+  "md": "datepicker.md",
+  "live": 25,
+  "demos": 26,
+  "missing": []
+ },
+ "form": {
+  "md": "form.md",
+  "live": 39,
+  "demos": 30,
+  "missing": [
+   "通过 props.component",
+   "表单布局",
+   "表单布局",
+   "表单布局",
+   "使用 helpText、extraText 放置提示信息",
+   "使用 helpText、extraText 放置提示信息",
+   "同步校验",
+   "异步校验",
+   "静默校验",
+   "useFormState",
+   "useFieldState",
+   "HOC-withFormApi",
+   "withField 封装自定义表单控件",
+   "使用 Form.useForm()"
+  ]
+ },
+ "input": {
+  "md": "input.md",
+  "live": 18,
+  "demos": 21,
+  "missing": []
+ },
+ "inputNumber": {
+  "md": "inputnumber.md",
+  "live": 12,
+  "demos": 13,
+  "missing": []
+ },
+ "pinCode": {
+  "md": "pincode.md",
+  "live": 5,
+  "demos": 6,
+  "missing": []
+ },
+ "radio": {
+  "md": "radio.md",
+  "live": 10,
+  "demos": 11,
+  "missing": []
+ },
+ "rating": {
+  "md": "rating.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "select": {
+  "md": "select.md",
+  "live": 25,
+  "demos": 26,
+  "missing": []
+ },
+ "slider": {
+  "md": "slider.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "switch": {
+  "md": "switch.md",
+  "live": 7,
+  "demos": 8,
+  "missing": []
+ },
+ "tagInput": {
+  "md": "taginput.md",
+  "live": 17,
+  "demos": 18,
+  "missing": []
+ },
+ "timePicker": {
+  "md": "timepicker.md",
+  "live": 12,
+  "demos": 13,
+  "missing": []
+ },
+ "transfer": {
+  "md": "transfer.md",
+  "live": 14,
+  "demos": 14,
+  "missing": [
+   "完全自定义渲染 、 拖拽排序"
+  ]
+ },
+ "treeSelect": {
+  "md": "treeselect.md",
+  "live": 19,
+  "demos": 20,
+  "missing": []
+ },
+ "upload": {
+  "md": "upload.md",
+  "live": 42,
+  "demos": 26,
+  "missing": [
+   "文件名超长省略",
+   "添加提示文本",
+   "限制文件总数量",
+   "限制文件总数量",
+   "字符串或 ReactNode 形式",
+   "函数形式",
+   "自定义预览逻辑",
+   "图片墙放大预览",
+   "图片墙放大预览",
+   "图片墙设置宽高",
+   "拖拽上传",
+   "拖拽上传",
+   "上传前自定义校验",
+   "基本用法",
+   "自定义裁切配置",
+   "圆形裁切",
+   "裁切前确认",
+   "拖拽上传裁切",
+   "自定义裁切弹窗样式"
+  ]
+ },
+ "colorPicker": {
+  "md": "colorpicker.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "anchor": {
+  "md": "anchor.md",
+  "live": 10,
+  "demos": 12,
+  "missing": []
+ },
+ "backTop": {
+  "md": "backtop.md",
+  "live": 2,
+  "demos": 3,
+  "missing": []
+ },
+ "breadcrumb": {
+  "md": "breadcrumb.md",
+  "live": 9,
+  "demos": 10,
+  "missing": []
+ },
+ "navigation": {
+  "md": "navigation.md",
+  "live": 10,
+  "demos": 11,
+  "missing": []
+ },
+ "pagination": {
+  "md": "pagination.md",
+  "live": 10,
+  "demos": 11,
+  "missing": []
+ },
+ "steps": {
+  "md": "steps.md",
+  "live": 11,
+  "demos": 12,
+  "missing": []
+ },
+ "tabs": {
+  "md": "tabs.md",
+  "live": 18,
+  "demos": 19,
+  "missing": []
+ },
+ "tree": {
+  "md": "tree.md",
+  "live": 27,
+  "demos": 28,
+  "missing": []
+ },
+ "avatar": {
+  "md": "avatar.md",
+  "live": 15,
+  "demos": 16,
+  "missing": []
+ },
+ "badge": {
+  "md": "badge.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "calendar": {
+  "md": "calendar.md",
+  "live": 9,
+  "demos": 10,
+  "missing": []
+ },
+ "card": {
+  "md": "card.md",
+  "live": 14,
+  "demos": 15,
+  "missing": []
+ },
+ "carousel": {
+  "md": "carousel.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "collapse": {
+  "md": "collapse.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "collapsible": {
+  "md": "collapsible.md",
+  "live": 4,
+  "demos": 6,
+  "missing": []
+ },
+ "descriptions": {
+  "md": "descriptions.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "dropdown": {
+  "md": "dropdown.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "empty": {
+  "md": "empty.md",
+  "live": 5,
+  "demos": 5,
+  "missing": [
+   "自定义"
+  ]
+ },
+ "highlight": {
+  "md": "highlight.md",
+  "live": 4,
+  "demos": 5,
+  "missing": []
+ },
+ "image": {
+  "md": "image.md",
+  "live": 3,
+  "demos": 10,
+  "missing": []
+ },
+ "cropper": {
+  "md": "cropper.md",
+  "live": 5,
+  "demos": 6,
+  "missing": []
+ },
+ "list": {
+  "md": "list.md",
+  "live": 14,
+  "demos": 15,
+  "missing": []
+ },
+ "modal": {
+  "md": "modal.md",
+  "live": 12,
+  "demos": 13,
+  "missing": []
+ },
+ "overflowList": {
+  "md": "overflowlist.md",
+  "live": 4,
+  "demos": 5,
+  "missing": []
+ },
+ "popover": {
+  "md": "popover.md",
+  "live": 9,
+  "demos": 11,
+  "missing": []
+ },
+ "scrollList": {
+  "md": "scrolllist.md",
+  "live": 1,
+  "demos": 2,
+  "missing": []
+ },
+ "sideSheet": {
+  "md": "sidesheet.md",
+  "live": 6,
+  "demos": 7,
+  "missing": []
+ },
+ "table": {
+  "md": "table.md",
+  "live": 38,
+  "demos": 58,
+  "missing": [
+   "固定列或表头",
+   "带排序和过滤功能的表头",
+   "一般可展开行",
+   "树形数据简单示例",
+   "行可交换的树形数据",
+   "单元格缩略",
+   "基本伸缩列",
+   "合并表头配置式写法"
+  ]
+ },
+ "tag": {
+  "md": "tag.md",
+  "live": 12,
+  "demos": 13,
+  "missing": []
+ },
+ "timeline": {
+  "md": "timeline.md",
+  "live": 8,
+  "demos": 6,
+  "missing": [
+   "时间轴在左侧（默认）",
+   "时间节点在左侧",
+   "交替展现",
+   "时间轴在右侧"
+  ]
+ },
+ "tooltip": {
+  "md": "tooltip.md",
+  "live": 9,
+  "demos": 10,
+  "missing": []
+ },
+ "userGuide": {
+  "md": "userGuide.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "vchart": {
+  "md": "chart.md",
+  "live": 0,
+  "demos": 2,
+  "missing": []
+ },
+ "resizable": {
+  "md": "resizable.md",
+  "live": 14,
+  "demos": 14,
+  "missing": [
+   "嵌套使用"
+  ]
+ },
+ "banner": {
+  "md": "banner.md",
+  "live": 4,
+  "demos": 5,
+  "missing": []
+ },
+ "notification": {
+  "md": "notification.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "popconfirm": {
+  "md": "popconfirm.md",
+  "live": 4,
+  "demos": 6,
+  "missing": []
+ },
+ "progress": {
+  "md": "progress.md",
+  "live": 13,
+  "demos": 14,
+  "missing": []
+ },
+ "skeleton": {
+  "md": "skeleton.md",
+  "live": 8,
+  "demos": 9,
+  "missing": []
+ },
+ "spin": {
+  "md": "spin.md",
+  "live": 5,
+  "demos": 6,
+  "missing": []
+ },
+ "toast": {
+  "md": "toast.md",
+  "live": 9,
+  "demos": 11,
+  "missing": []
+ },
+ "configProvider": {
+  "md": "configprovider.md",
+  "live": 3,
+  "demos": 6,
+  "missing": []
+ },
+ "localeProvider": {
+  "md": "locale.md",
+  "live": 3,
+  "demos": 2,
+  "missing": [
+   "国际化",
+   "自定义国际化组件",
+   "支持多语言的组件"
+  ]
+ },
+ "sidebar": {
+  "md": "sidebar.md",
+  "live": 8,
+  "demos": 2,
+  "missing": [
+   "基础容器",
+   "MCP 配置",
+   "参考来源",
+   "代码展示",
+   "代码列表",
+   "富文本编辑器",
+   "富文本列表",
+   "侧边信息栏"
+  ]
+ }
+}
