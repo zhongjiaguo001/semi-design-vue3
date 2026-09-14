@@ -26,7 +26,16 @@ npm run dev        # playground at http://localhost:5180
 npm test           # vitest (jsdom)
 npm run typecheck
 npm run build      # dist/ + MCP data
+npm run build:docs # playground/dist（文档站，供 Vercel 发布）
 ```
+
+文档站用 **Vercel** 发布（配置见仓库根目录 `vercel.json`）：
+
+1. 打开 [vercel.com/new](https://vercel.com/new)，用 GitHub 登录并导入 `zhongjiaguo001/semi-design-vue3`
+2. Framework Preset 选 Vite；Build Command 为 `npm run build:docs`，Output Directory 为 `playground/dist`（已写进 `vercel.json`，一般不用改）
+3. 之后每次推送 `main` 会自动构建 playground 并发布生产环境
+
+不要用根目录的 `npm run build` 作为 Vercel 构建命令：那是组件库产物，没有 `index.html`。
 
 尚未登录 npm 时，也可以装本地 tarball：
 

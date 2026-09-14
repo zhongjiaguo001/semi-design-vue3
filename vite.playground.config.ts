@@ -15,4 +15,8 @@ export default defineConfig({
     },
   },
   server: { port: 5180 },
+  preview: { port: 4180 },
+  build: {
+    emptyOutDir: true,
+  },
 });
