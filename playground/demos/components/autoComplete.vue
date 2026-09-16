@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { h, ref } from 'vue';
+import { h, ref, markRaw } from 'vue';
 import { AutoComplete, Avatar, Empty, IconSearch, IconList, IconEdit, IconText, IconBox, IconGridSquare } from '@/index';
 import DemoBlock from '../../DemoBlock.vue';
 
@@ -47,11 +47,11 @@ const renderSelectedEmail = (option: Person) => option.email;
 
 // ---------- 远程搜索 ----------
 const initList = [
-  { value: 'select', label: '选择器', icon: IconList },
-  { value: 'input', label: '输入框', icon: IconEdit },
-  { value: 'form', label: '表单', icon: IconText },
-  { value: 'button', label: '按钮', icon: IconBox },
-  { value: 'table', label: '表格', icon: IconGridSquare },
+  { value: 'select', label: '选择器', icon: markRaw(IconList) },
+  { value: 'input', label: '输入框', icon: markRaw(IconEdit) },
+  { value: 'form', label: '表单', icon: markRaw(IconText) },
+  { value: 'button', label: '按钮', icon: markRaw(IconBox) },
+  { value: 'table', label: '表格', icon: markRaw(IconGridSquare) },
 ];
 const remoteLoading = ref(false);
 const remoteList = ref<any[]>(initList);

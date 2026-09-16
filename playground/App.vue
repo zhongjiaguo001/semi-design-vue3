@@ -328,6 +328,7 @@ const collectToc = () => {
   }
   const nodes = root.querySelectorAll('.docs-page h2, .docs-page h3');
   toc.value = [...nodes]
+    .filter((el) => !el.closest('.demo-block-live'))
     .map((el) => {
       const text = headingText(el);
       let id = el.id;

@@ -633,10 +633,10 @@ const TreeSelect = defineComponent({
         const normalTags = tagList.slice(0, maxTagCount);
         const restTags = tagList.slice(maxTagCount);
         if (n > 0) {
-          let nTag: VNodeChild = h(Tag, { closable: false, size: 'large', color: 'grey', style: { backgroundColor: 'transparent' }, key: '_+n' }, () => `+${n}`);
-          if (showRestTagsPopover) {
-            nTag = h(Popover, { showArrow: true, trigger: 'hover', position: 'top', autoAdjustOverflow: true, className: 'semi-tag-rest-group-popover', ...restTagsPopoverProps, key: '_+n_Popover' }, { default: () => nTag, content: () => restTags });
-          }
+          const restCountTag = h(Tag, { closable: false, size: 'large', color: 'grey', style: { backgroundColor: 'transparent' }, key: '_+n' }, () => `+${n}`);
+          const nTag: VNodeChild = showRestTagsPopover
+            ? h(Popover, { showArrow: true, trigger: 'hover', position: 'top', autoAdjustOverflow: true, className: 'semi-tag-rest-group-popover', ...restTagsPopoverProps, key: '_+n_Popover' }, { default: () => restCountTag, content: () => restTags })
+            : restCountTag;
           normalTags.push(nTag);
           contents = normalTags;
         }

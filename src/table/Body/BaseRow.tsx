@@ -236,6 +236,7 @@ const BaseRow = defineComponent({
         ariaProps['aria-level'] = 1;
       }
       const { onClick: _oc, onMouseEnter: _ome, onMouseLeave: _oml, onMouseenter: _ome2, onMouseleave: _oml2, onDoubleClick: _odc, onDblclick: _odc2, onContextMenu: _ocm, onContextmenu: _ocm2, ...restRowProps } = rowProps;
+      const cells = renderCells();
       return h(
         BodyRow,
         {
@@ -251,7 +252,7 @@ const BaseRow = defineComponent({
           onDblclick: handleDoubleClick,
           onContextmenu: handleContextMenu,
         },
-        renderCells()
+        typeof BodyRow === 'string' ? cells : { default: () => cells }
       );
     };
   },

@@ -167,7 +167,7 @@ const formRender = ({ formState }: any) =>
   </DemoBlock>
 
   <DemoBlock title="已支持的表单控件" desc="Form.Input / Select / DatePicker / Switch / Checkbox / RadioGroup / Slider / Rating / TagInput 等。">
-    <Form style="width: 420px" @submit="onSubmit">
+    <Form style="width: 420px" :initValues="{ skills: [] }" @submit="onSubmit">
       <Form.Input field="name" label="姓名" />
       <Form.Select field="role" label="角色" style="width: 100%">
         <Option value="rd">开发</Option>

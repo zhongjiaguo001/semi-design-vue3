@@ -55,7 +55,9 @@ const Checkbox = defineComponent({
 
     const isInGroup = () => Boolean(context && context.checkboxGroup && 'value' in propsView);
 
-    const hasChildren = () => Boolean(slots.default && flattenChildren(slots.default()).length);
+    let rendering = false;
+    // Outside render (e.g. foundation.init in setup) only test slot presence to avoid invoking the slot early.
+    const hasChildren = () => (rendering ? Boolean(slots.default && flattenChildren(slots.default()).length) : Boolean(slots.default));
     const hasExtra = () => Boolean(slots.extra || props.extra);
 
     const adapter = {
@@ -129,6 +131,7 @@ const Checkbox = defineComponent({
     return () => {
       const { disabled, prefixCls, indeterminate, value, role, tabIndex, id, type } = props;
       const { checked, addonId, extraId, focusVisible } = state;
+      rendering = true;
       const children = slots.default?.();
       const childrenExists = hasChildren();
       const extra = slots.extra ? slots.extra() : normalizeNode(props.extra);
@@ -329,7 +332,12 @@ export const CheckboxGroup = defineComponent({
           );
         });
       } else {
-        inner = flattenChildren(slots.default?.()).map((itm, index) => (typeof itm.type === 'object' ? cloneVNode(itm, { key: index, role: 'listitem' }) : itm));
+        inner = flattenChildren(slots.default?.()).map((itm, index) => {
+          if (typeof itm.type !== 'object' || itm.type === null) return itm;
+          const extra: Record<string, any> = { key: index };
+          if (itm.type === Checkbox || (itm.type as any).name === 'Checkbox') extra.role = 'listitem';
+          return cloneVNode(itm, extra);
+        });
       }
       return h(
         'div',

@@ -98,7 +98,32 @@ export function toCatalogKey(folder: string): string {
 }
 
 function isTableSep(line: string): boolean {
-  return /^\s*\|?\s*:?-{3,}/.test(line);
+  const cells = splitTableCells(line);
+  return cells.length > 0 && cells.every((c) => /^:?-{1,}:?$/.test(c.replace(/\s+/g, '')));
+}
+
+/** Split a markdown table row on unescaped `|`. `\|` stays as `|` in the cell. */
+function splitTableCells(line: string): string[] {
+  const cells: string[] = [];
+  let cur = '';
+  const s = line.trim();
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '\\' && s[i + 1] === '|') {
+      cur += '|';
+      i += 1;
+      continue;
+    }
+    if (s[i] === '|') {
+      cells.push(cur.trim());
+      cur = '';
+      continue;
+    }
+    cur += s[i];
+  }
+  cells.push(cur.trim());
+  if (cells.length && cells[0] === '') cells.shift();
+  if (cells.length && cells[cells.length - 1] === '') cells.pop();
+  return cells;
 }
 
 export function mdToHtml(md: string): string {
@@ -148,12 +173,7 @@ export function mdToHtml(md: string): string {
       flushPara();
       const rows: string[][] = [];
       while (i < lines.length && lines[i].trim().startsWith('|')) {
-        const cells = lines[i]
-          .trim()
-          .replace(/^\|/, '')
-          .replace(/\|$/, '')
-          .split('|')
-          .map((c) => c.trim());
+        const cells = splitTableCells(lines[i]);
         if (!isTableSep(lines[i])) rows.push(cells);
         i += 1;
       }

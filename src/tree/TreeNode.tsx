@@ -46,7 +46,7 @@ export const treeNodeProps = {
   label: { type: [String, Number, Object, Function, Array] as PropType<any>, default: undefined },
   data: { type: Object as PropType<any>, default: undefined },
   style: { type: Object as PropType<any>, default: undefined },
-  value: { type: [String, Number] as PropType<any>, default: undefined },
+  value: { type: [String, Number, Object, Boolean] as PropType<any>, default: undefined },
   display: { type: null as unknown as PropType<any>, default: undefined },
 };
 
